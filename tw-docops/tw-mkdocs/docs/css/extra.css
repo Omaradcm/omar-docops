@@ -1,0 +1,134 @@
+/* Material Theme */
+
+/* Fonts to use on the site */
+:root {
+    --md-text-font-family: "Roboto";
+    --md-code-font-family: "Roboto Mono";
+}
+
+/* Main Header */
+.md-header {
+    color: rgb(0, 0, 0);
+    background-color: rgb(30, 161, 194);
+}
+
+/* Main background*/
+.md-main {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Headings  h1 */
+.md-typeset h1 {
+ color: rgb(131, 140, 141);
+ font-weight: 300;
+/* font-family: Arial, Helvetica, sans-serif;
+*/}
+/* Headings  h2 */
+.md-typeset h2 {
+    color: rgb(30, 161, 194);
+/*    font-size: x-large;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+*/   }
+
+/* Paragraph */
+p {
+    color: rgb(131, 140, 141);
+}
+
+/* Unsorted list */
+ul {
+    color: rgb(131, 140, 141);
+}
+
+/* Sorted list */
+ol {
+    color: rgb(131, 140, 141);
+}
+
+/* Links 
+The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked */
+
+.md-typeset a:link {
+    color: rgb(30, 161, 194);
+    text-decoration:underline;
+}
+
+.md-typeset a:hover {
+    color: rgb(30, 161, 194);
+    background-color: rgb(30, 161, 194);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Heading of the left menu */
+.md-nav--primary .md-nav__title {
+    color: rgb(30, 161, 194);
+    
+    /*font-size: medium;
+    font-weight: bold;*/
+}
+
+/* Active element of the left menu */
+.md-nav__item md-nav__link--active {
+    color:rgb(30, 161, 194);
+}
+/* Active element of the left menu - Second option */
+:root {
+    --md-primary-fg-color: rgb(30, 161, 194);
+}
+
+/* Element of the left menu */
+.md-nav__link {
+    color:rgb(30, 161, 194);
+}
+
+/* Background of the menus*/
+.md-sidebar__scrollwrap {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Footer */
+.md-footer {
+    background-color: rgb(75, 75, 75);
+}
+
+/* Below Footer */
+.md-footer-meta.md-typeset {
+    background-color: rgba(0, 0, 0, 0.534);
+}
+/* Next and Previous labels */
+.md-footer__direction {
+    color: white;
+}
+/* Name of the following and previous pages */
+.md-ellipsis {
+    color: white;
+}
+
+
+
+
+
+
+/* readthedocs theme */
+.wy-side-nav-search {
+    background-color: black;
+}
+
+.wy-side-nav-search>a {
+    color: red;
+}
+
+/* mkdocs theme*/
+
+.bs-sidebar .nav .nav > li > a {
+    color:black;
+}
+
+

@@ -1,0 +1,15 @@
+site_name: Omar Álvarez del Castillo Profile
+nav:
+  - Home: index.md
+  - Education: education.md
+  - Skills: skills.md
+  - Selected Past Work: selectedpastwork.md
+
+theme:
+  name: material
+  palette:
+    primary: gray
+    accent: indigo
+  logo: images/wizeline_dark_isotype@2x.png
+extra_css:
+  - css/extra.css
