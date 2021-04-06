@@ -1,0 +1,102 @@
+---
+title: Wizeline Slate Template
+
+toc_footers:
+  - <a href='https://github.com/wizeline/tw-docops'>DocOps on Github</a>
+  - <a href='https://tw-mkdocs.netlify.app'>MkDocs Demo</a>
+
+search: true
+
+code_clipboard: true
+
+language_tabs:
+  - javascript: JavaScript
+  - css: CSS
+  - shell: cURL
+  - ruby: Ruby
+  - python: Python
+---
+
+# Wizeline DocOps Template
+
+Welcome to the DocOps Template.
+
+<img src="./images/wizeline.png" alt="Wizeline Logo">
+
+## Adding Information to the Page
+
+Use Markdown to add information to the pages of your site.
+
+For example, here is a list:
+
+1.  Item 1
+2.  Item 2
+3.  Item 3
+
+Here is another list:
+
+* Another item
+* Another item
+
+```javascript
+function copyToClipboard(container) {
+  const el = document.createElement('textarea');
+  el.value = container.textContent.replace(/\n$/, '');
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+}
+
+function setupCodeCopy() {
+  $('pre.highlight').prepend('<div class="copy-clipboard"><svg xmlns="http://www.w3.org/2000/svg"></div>');
+  $('.copy-clipboard').on('click', function() {
+    copyToClipboard(this.parentNode.children[1]);
+  });
+}
+```
+
+```css
+// BACKGROUND COLORS
+////////////////////
+$nav-bg: #2E3336 !default;
+$examples-bg: #2E3336 !default;
+$code-bg: #1E2224 !default;
+$code-annotation-bg: #191D1F !default;
+$nav-subitem-bg: #1E2224 !default;
+$nav-active-bg: #0F75D4 !default;
+$nav-active-parent-bg: #1E2224 !default; // parent links of the current section
+$lang-select-border: #000 !default;
+$lang-select-bg: #6d7375 !default;
+$lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
+$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
+$main-bg: #F3F7F9 !default;
+$aside-notice-bg: #8fbcd4 !default;
+$aside-warning-bg: #c97a7e !default;
+$aside-success-bg: #6ac174 !default;
+$search-notice-bg: #c97a7e !default;
+```
+
+Code blocks appear to the right -->
+
+**Tip**: For exact alignment, move the code block before the text.
+
+## Adding a New Page to Slate
+
+Add new pages to your site doing the following:
+
+1. Create a `_fileName.md.erb` file in the **includes** directory. For example, `_about.md.erb`.
+2. Open the `index.html.md.erb` file.
+3. Add the path of the page to the index page at the applicable location using the `<%%= partial "includes/_fileName.md.erb" %>` format.
+
+**Tip**: Rename files and remove the .erb extension to use markdown extensions such as preview. Add the .erb extension back before previewing or pushing changes.
+
+<aside class="notice">
+Everything beyound this sentence uses includes.
+</aside>
+
+<%= partial "includes/_about.md.erb" %>
+
+<%= partial "includes/_additional-information.md.erb" %>
+
+<%= partial "includes/_api-example.md.erb" %>
